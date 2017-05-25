@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Layout } from 'react-mdl'
+import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div style={{height: '100vh', position: 'relative'}}>
-        <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-          <div style={{height: '100vh', display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <div style={{width: '400px', height: '400px', backgroundColor:'white', display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-              <p><Link to="/login">Login</Link></p>
-            </div>
+      <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
+        <div className="sg-container">
+          <div className="sg-contents">
+            <p><Link to="/login">Login</Link></p>
           </div>
-        </Layout>
-      </div>
+        </div>
+      </Layout>
     );
   }
 }
